@@ -1,0 +1,2 @@
+# cine-ticketing
+PRUEBA DE APTITUD CONVOCATORIA
