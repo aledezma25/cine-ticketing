@@ -5,7 +5,7 @@ import { getFirestore, collection, addDoc } from 'firebase/firestore';
 
 // Configuración de Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyB8xzQsmMoyrmc-Q4afRVhvcU1TIpuTFQs",
+    apiKey: "Por seguridad se quita el apikey",
     authDomain: "cine-ticketing.firebaseapp.com",
     projectId: "cine-ticketing",
     storageBucket: "cine-ticketing.appspot.com",
