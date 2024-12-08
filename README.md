@@ -49,10 +49,21 @@ npm install
 ```
 
 ## 4️⃣ Configurar la base de datos
-Ejecuta las migraciones y rellena las tablas con datos usando los seeders:
+- Ejecuta las migraciones y rellena las tablas con datos usando los seeders:
 ```bash
 php artisan migrate
 php artisan db:seed
+```
+- Correr el Seeder de usuarios:
+```bash
+php artisan db:seed --class=UserSeeder
+```
+
+## 5️⃣ Crear enlace simbólico para almacenamiento de imágenes
+Para visualizar las imágenes subidas al servidor, debes crear un enlace simbólico entre el directorio storage y la carpeta public. Ejecuta el siguiente comando:
+
+```bash
+php artisan storage:link
 ```
 
 ## 5️⃣ Ejecutar los servicios
@@ -68,9 +79,15 @@ Backend (Laravel):
 php artisan serve
 ```
 
+## Generar la clave del proyecto
+Al correr el proyecto por primera vez, es importante generar una clave única para la aplicación. Para ello, ejecuta el siguiente comando:
+```bash
+php artisan key:generate
+```
+
+
 ## 🌐 Acceso a la aplicación
-- Frontend: Visita http://localhost:5173 (por defecto en Vite).
-- Backend: Visita http://localhost:8000.
+- Visita http://localhost:8000.
 
 ## 🛠️ Herramientas utilizadas
 - ⚙️ Laravel: Framework PHP para la lógica de negocio.
