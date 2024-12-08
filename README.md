@@ -8,9 +8,9 @@
 
 Antes de comenzar, asegúrate de tener instalados los siguientes componentes en tu sistema:
 
-- 🐘 **PHP** (>= 8.0)
-- 🎼 **Composer**
-- 🟢 **Node.js** y **npm**
+- 🐘 **PHP** v8.1
+- 🎼 **Composer** v2.8
+- 🟢 **Node.js LTS** y **npm**
 - 🗄️ **MySQL**
 
 ---
@@ -66,7 +66,7 @@ Para visualizar las imágenes subidas al servidor, debes crear un enlace simból
 php artisan storage:link
 ```
 
-## 5️⃣ Ejecutar los servicios
+## 6️⃣ Ejecutar los servicios
 Inicia ambos servicios para desplegar la aplicación:
 
 Frontend (Vue.js):
@@ -79,7 +79,7 @@ Backend (Laravel):
 php artisan serve
 ```
 
-## Generar la clave del proyecto
+## 7️⃣ Generar la clave del proyecto
 Al correr el proyecto por primera vez, es importante generar una clave única para la aplicación. Para ello, ejecuta el siguiente comando:
 ```bash
 php artisan key:generate
